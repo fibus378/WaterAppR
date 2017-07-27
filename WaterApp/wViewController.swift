@@ -9,7 +9,22 @@
 import UIKit
 
 class wViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var imput1: UITextField!
+    
+    
+    @IBAction func AddItem1(_ sender: Any)
+    {
+        if (imput1.text != "")
+        {
+        
+            list.append(imput1.text!)
+            imput1.text = ""
+        }
+    
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
